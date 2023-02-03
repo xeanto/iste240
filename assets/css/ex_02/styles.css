@@ -1,0 +1,104 @@
+/* .wrapper {
+  background-color: red;
+} */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.nav {
+  flex: 1 1 auto;
+  grid-area: nav;
+  display: flex;
+  background: lightskyblue;
+  padding: 14px 16px;
+  border-bottom: 1px solid black;
+  width: 100vw;
+}
+
+.nav > div {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.side {
+  grid-area: side;
+}
+
+.box > .star {
+  font-size: 120px;
+  text-shadow: yellow 3px 3px;
+  color: lightgreen;
+}
+
+.box {
+  transition: 1s;
+  font-size: 30px;
+  background-color: green;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  max-width: 30vw;
+  cursor: grab;
+}
+
+.box:hover {
+  background-color: purple;
+}
+
+body {
+  display: flex;
+  margin: 0px;
+}
+
+@media screen and (min-width: 601px) {
+  .repeating-side-image {
+    align-self: flex-start;
+    background-image: url("/Users/xeanto/Library/CloudStorage/GoogleDrive-cam8940@g.rit.edu/My Drive/Year 2/ISTE 240/assets/media/ex_02/side.jpg");
+    background-repeat: repeat-y;
+    height: 100vh;
+  }
+  .inner-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .repeating-side-image {
+    align-self: flex-start;
+    background-image: url("assets/media/ex_02/side.jpg");
+    background-repeat: repeat-y;
+    height: 100vh;
+    max-width: 150px;
+  }
+  .inner-row {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .inner-row > .column.repeating-side-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    max-width: 100vw;
+  }
+}

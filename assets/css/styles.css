@@ -1,0 +1,95 @@
+#nav {
+  grid-area: nav;
+  background: darkgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+#nav h1 {
+  color: black;
+}
+
+#pic-of-me {
+  grid-area: pic;
+  height: 60vh;
+  width: auto;
+}
+
+#about {
+  grid-area: about;
+}
+#who {
+  grid-area: who;
+}
+#body {
+  grid-area: body;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 25%;
+  grid-template-areas: "who who" "about pic";
+}
+
+#side {
+  grid-area: side;
+  display: flex;
+  background: lightgray;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.excersize-link a {
+  /* background: black; */
+  border: 3px dotted gray;
+  text-decoration: none;
+  color: black;
+  transition: 225ms;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.excersize-link a:hover {
+  transition: 225ms;
+  background: white;
+  border: 3px solid black;
+  color: black;
+}
+
+#nav,
+#side {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+nav h1 {
+  color: white;
+}
+
+.excersize-link {
+  display: flex;
+  padding: 30px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  column-gap: 20%;
+}
+
+.root-wrapper {
+  display: grid;
+  grid-template-columns: 10vw 3fr 1fr;
+  grid-template-rows: 7vh 3fr 1fr;
+  grid-template-areas: "side nav nav" "side body body" "side body body";
+  grid-gap: 8px;
+}
+
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: gray;
+}
