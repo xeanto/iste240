@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/ex_04/styles.css" />
+    <title>Forms Galore!</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column nav-col">
+        <img
+          src="..\..\assets\media\ex_04\rit.png"
+          alt="The RIT Logo"
+          class="logo"
+        />
+        <nav>
+          <a href="/" class="nav-link h1.5">Home</a> |
+          <a href="https://www.rit.edu" class="nav-link h1.5">RIT</a> |
+          <a href="">Feedback</a>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <h1 class="center"><i>Please tell us about your visit</i></h1>
+      <hr class="separator" />
+      <form class="center">
+        <label for="g_num">How many in your group? </label>
+        <input type="number" class="numbox" id="g_num" value="1" /><br />
+        <label for="visit">When did you visit?</label>
+        <input type="date" class="datebox" id="visit" /><br />
+        <div class="radiobox">
+            Favorite place <br/>
+            <label for="place-1" >Baseball Field</label>
+            <input type="radio" name="place-1" ><br/>
+
+            <label for="place-2" >RIT</label>
+            <input type="radio" name="place-2" ><br/>
+
+            <label for="place-3" >Luigi's Italian Restauraunt</label>
+            <input type="radio" name="place-3" ><br/>
+
+            <label for="place-4" >Mom's Hotel</label>
+            <input type="radio" name="place-4" ><br/>
+
+            <label for="place-5" >The Youth Hostel</label>
+            <input type="radio" name="place-5" ><br/>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>

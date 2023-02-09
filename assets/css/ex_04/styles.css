@@ -1,0 +1,75 @@
+div.column > nav {
+  text-align: center;
+  width: 100vw;
+  height: 10vh;
+  font-size: 18pt;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav > a {
+  background-color: black;
+  color: lightblue;
+  padding: 12px;
+  border: solid 2px black;
+  transition: 0.75s;
+  padding-top: 5px;
+}
+
+nav > a:hover {
+  border-color: orangered;
+  color: orange;
+}
+
+.logo {
+  max-width: 10vw;
+  max-height: 10vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 1fr;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  height: 1fr;
+}
+
+.center {
+  text-align: center;
+}
+
+.separator {
+  width: 75%;
+  text-align: center;
+  height: 2px;
+  color: black;
+  border-width: 0px;
+  background-color: black;
+  margin-bottom: 15px;
+}
+
+.numbox {
+  margin-left: 25px;
+  width: 30px;
+}
+
+.datebox {
+  margin-left: 25px;
+}
+
+.radiobox {
+    width: 25%;
+}
+
+
+.radiobox > label {
+    display: inline;
+    text-align: left;
+}
+body {
+  font-size: 12pt;
+}
