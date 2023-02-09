@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <form method="GET>">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name<input name="name" type="text" /></label><br />
+        <label for="address">Address<input name="address" type="text" /></label>
+      </fieldset>
+      <label>How did you hear about us:</label><br />
+      <label for="one"><input type="radio" name="one" />Radio Ad</label><br />
+      <label for="two"><input type="radio" name="two" />Tv Ad</label><br />
+      <label for="three"><input type="radio" name="three" />Online</label><br />
+      <button type="button">Submit</button>
+    </form>
+    <style>
+      .dropdown ul {
+        display: flex;
+        position: relative;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;
+        background: lightblue;
+      }
+      .dropdown li {
+        transition: 0.6s;
+        padding: 10px;
+      }
+      .dropdown li:hover {
+        background: orange;
+      }
+      .dropdown .submenu {
+        display: block;
+        position: absolute;
+        background: limegreen;
+        top: 38px;
+      }
+
+      .dropdown li .submenu {
+        transition: 0.5s;
+        opacity: 0;
+        /* display: none; */
+      }
+
+      .dropdown li:hover .submenu {
+        opacity: 100;
+        /* display: block; */
+      }
+    </style>
+
+    <nav class="dropdown">
+      <ul>
+        <li>
+          Hotels
+          <ul class="submenu">
+            <li>Mariott</li>
+            <li>Hyatt</li>
+            <li>Hilton</li>
+          </ul>
+        </li>
+        <li>
+          Museums
+          <ul class="submenu">
+            <li>History</li>
+            <li>Science</li>
+          </ul>
+        </li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
