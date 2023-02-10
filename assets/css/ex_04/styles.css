@@ -3,8 +3,6 @@ div.column > nav {
   width: 100vw;
   height: 10vh;
   font-size: 18pt;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* nav > a {
@@ -17,16 +15,18 @@ div.column > nav {
 } */
 
 .hoverable {
-  background-color: black;
-  color: lightblue;
+  background-color: #05386b;
+  color: #edf5e1;
   padding: 12px;
   border: solid 2px black;
   transition: 0.75s;
+  text-decoration: none;
 }
 
 .hoverable:hover {
-  border-color: orangered;
-  color: orange;
+  border-color: #05486b;
+  color: #05486b;
+  background-color: #8ee4af;
 }
 
 /* nav > a:hover {
@@ -59,7 +59,7 @@ div.column > nav {
 }
 
 body {
-  background: beige;
+  background: #5cdb95;
   font-size: 12pt;
 }
 
@@ -87,11 +87,16 @@ body {
 }
 
 .left {
-  float:left;
+  float: left;
 }
 
 fieldset {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+* {
+  color: #05386b;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
