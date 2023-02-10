@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     width: 100vw;
-    background: lightblue;
+    background: rgb(135, 206, 250);
     height: 3vh;
     border-bottom: 1px solid black;
     padding-top: .3rem;
@@ -19,7 +19,7 @@
 .box {
     transition: 1s;
     font-size: 30px;
-    background-color: green;
+    background-color: rgb(59, 86, 16);
     border-radius: 15px;
     margin: 10px;
     margin-right:5px;
@@ -27,6 +27,7 @@
     text-align: center;
     width: 220px;
     cursor: grab;
+    color: #cb99ff;
 }
 
 .box:hover {
@@ -35,8 +36,8 @@
 
 .star {
     font-size: 120px;
-    text-shadow: yellow 3px 3px;
-    color: lightgreen;
+    text-shadow: rgb(250, 252, 0) 3px 3px;
+    color: rgb(127, 165, 8);
 }
 
 .side {
