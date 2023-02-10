@@ -7,21 +7,37 @@ div.column > nav {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-nav > a {
+/* nav > a {
   background-color: black;
   color: lightblue;
   padding: 12px;
   border: solid 2px black;
   transition: 0.75s;
   padding-top: 5px;
+} */
+
+.hoverable {
+  background-color: black;
+  color: lightblue;
+  padding: 12px;
+  border: solid 2px black;
+  transition: 0.75s;
 }
 
-nav > a:hover {
+.hoverable:hover {
   border-color: orangered;
   color: orange;
 }
 
+/* nav > a:hover {
+  border-color: orangered;
+  color: orange;
+} */
+
 .logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
   max-width: 10vw;
   max-height: 10vh;
 }
@@ -40,6 +56,11 @@ nav > a:hover {
 
 .center {
   text-align: center;
+}
+
+body {
+  background: beige;
+  font-size: 12pt;
 }
 
 .separator {
@@ -62,14 +83,15 @@ nav > a:hover {
 }
 
 .radiobox {
-    width: 25%;
+  width: 25%;
 }
 
-
-.radiobox > label {
-    display: inline;
-    text-align: left;
+.left {
+  float:left;
 }
-body {
-  font-size: 12pt;
+
+fieldset {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }

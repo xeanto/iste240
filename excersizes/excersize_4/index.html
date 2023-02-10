@@ -16,38 +16,55 @@
           class="logo"
         />
         <nav>
-          <a href="/" class="nav-link h1.5">Home</a> |
-          <a href="https://www.rit.edu" class="nav-link h1.5">RIT</a> |
-          <a href="">Feedback</a>
+          <a href="/" class="nav-link h1.5 hoverable">Home</a> |
+          <a href="https://www.rit.edu" class="nav-link h1.5 hoverable">RIT</a> |
+          <a href="" class="hoverable">Feedback</a>
         </nav>
       </div>
     </div>
     <div class="row">
       <h1 class="center"><i>Please tell us about your visit</i></h1>
       <hr class="separator" />
-      <form class="center">
+      <form class="center" method="GET">
         <label for="g_num">How many in your group? </label>
         <input type="number" class="numbox" id="g_num" value="1" /><br />
         <label for="visit">When did you visit?</label>
         <input type="date" class="datebox" id="visit" /><br />
-        <div class="radiobox">
-            Favorite place <br/>
-            <label for="place-1" >Baseball Field</label>
-            <input type="radio" name="place-1" ><br/>
+        <fieldset class="center">
+          <legend>Favorite Place</legend>
+          <label for="place-1" class="left"> 
+          <input type="radio" name="place-1" class="left"/>
+          Baseball Field
+          </label><br>
+          
 
-            <label for="place-2" >RIT</label>
-            <input type="radio" name="place-2" ><br/>
+          <label for="place-2" class="left">
+          <input type="radio" name="place-1" class="left"/>
+          RIT
+          </label><br>
+          
 
-            <label for="place-3" >Luigi's Italian Restauraunt</label>
-            <input type="radio" name="place-3" ><br/>
+          <label for="place-3" class="left">
+          <input type="radio" name="place-1" class="left"/>
+          Luigi's Italian Restauraunt
+          </label><br>
+          
 
-            <label for="place-4" >Mom's Hotel</label>
-            <input type="radio" name="place-4" ><br/>
+          <label for="place-4" class="left">
+          <input type="radio" name="place-1" class="left"/>
+          Mom's Hotel
+          </label><br>
+          
 
-            <label for="place-5" >The Youth Hostel</label>
-            <input type="radio" name="place-5" ><br/>
-        </div>
-
+          <label for="place-5" class="left">
+          <input type="radio" name="place-1" class="left"/>
+          The Youth Hostel
+          </label><br>
+        
+        </fieldset>
+        <p class="center">Overall, please rate your visit</p>
+        <p>1<input type="range" min="1" max="100" value="50" class="center">10</p>
+        <button type="button" class="hoverable">Submit</button>
       </form>
     </div>
   </body>
