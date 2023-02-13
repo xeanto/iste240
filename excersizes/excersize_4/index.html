@@ -28,9 +28,9 @@
       <hr class="separator" />
       <form class="center" method="GET">
         <label for="g_num">How many in your group? </label>
-        <input type="number" class="numbox" id="g_num" value="1" /><br />
+        <input type="number" class="numbox" id="g_num" value="1" name="numbox" /><br />
         <label for="visit">When did you visit?</label>
-        <input type="date" class="datebox" id="visit" /><br />
+        <input type="date" class="datebox" id="visit" name="visit"/><br />
         <fieldset class="center">
           <legend>Favorite Place</legend>
           <label for="place-1" class="left">
@@ -60,9 +60,9 @@
         </fieldset>
         <p class="center">Overall, please rate your visit</p>
         <p>
-          1<input type="range" min="1" max="100" value="50" class="center" />10
+          1<input name="rating" type="range" min="1" max="100" value="50" class="center" />10
         </p>
-        <button type="button" class="hoverable">Submit</button>
+        <input value="submit" type="submit" class="hoverable"/>
       </form>
     </div>
   </body>

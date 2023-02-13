@@ -41,7 +41,7 @@
 }
 
 .side {
-    background-image: url("/assets/media/ex_02/side.jpg");
+    background-image: url("../../media/ex_02/side.jpg");
     width: 100px;
     height: 97vh;
     background-repeat: repeat-y;
