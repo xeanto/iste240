@@ -5,7 +5,8 @@ function jsStyle() {
   document.getElementById("text").style.color != "rgb(221, 120, 59)"
     ? (document.getElementById("text").style.color = "rgb(221, 120, 59)")
     : (document.getElementById("text").style.color = "rgb(77, 196, 255)");
-  document.getElementById("styleMe").textContent == "Change Style"
+    console.log(document.getElementById("styleMe").textContent)
+    document.getElementById("styleMe").textContent.includes("Change Style")
     ? (document.getElementById("styleMe").textContent = "Revert Style")
     : (document.getElementById("styleMe").textContent = "Change Style");
 }
