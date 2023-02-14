@@ -107,7 +107,7 @@
 
 .form-text:hover {
   border: none;
-  border-radius: none;
+  border-radius: unset;
 }
 
 .form-text:hover::placeholder {
