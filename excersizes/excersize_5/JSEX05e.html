@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multiply and Divide</title>
+    <link rel="stylesheet" href="ex05.css" />
+
+    <script src="ex05.js"></script>
+  </head>
+  <body>
+    <div class="box column">
+      <div>
+        <h2>JavaScript Exercise 5d</h2>
+      </div>
+      <form class="center">
+        <input
+          class="form-text jsex form-margin form-text"
+          type="text"
+          id="firstoperand"
+          placeholder="First Operand"
+        /><br />
+        <input
+          class="form-text jsex form-margin"
+          type="text"
+          id="secondoperand"
+          placeholder="Second Operand"
+        /><br />
+        <input
+          type="button"
+          onclick="divide()"
+          value="Divide"
+          class="form-margin jsex smaller-button"
+        />
+        <input
+          type="button"
+          onclick="multiply()"
+          value="Multiply"
+          class="form-margin jsex smaller-button"
+        />
+        <p>The answer: <span id="result"></span></p>
+      </form>
+    </div>
+    <a href="ex05.html" class="jsex back small-button">Back</a>
+  </body>
+</html>
