@@ -10,12 +10,16 @@
         function submit() {
             return false;
         }
+
+        function getForm() {
+            console.log(document.forms['contactform'])
+        }
     </script>
   </head>
   <body>
     <div class="box center" style="flex-direction:column">
         <div onclick="alert('Clicked me!')">Click me</div>
-      <form name="contactform" action="process.php" method="get" onsubmit="return submit()">
+      <form name="contactform" method="get" onsubmit="getForm()">
         Lastname
         <input
           type="text"
