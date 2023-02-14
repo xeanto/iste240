@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+        function submit() {
+            return false;
+        }
+    </script>
+  </head>
+  <body>
+    <div class="box center" style="flex-direction:column">
+        <div onclick="alert('Clicked me!')">Click me</div>
+      <form name="contactform" action="process.php" method="get" onsubmit="return submit()">
+        Lastname
+        <input
+          type="text"
+          name="fname"
+          id="name"
+          minlength="2"
+          class=" marg"
+          required
+        />
+        <br />
+        Firstname
+        <input
+          type="text"
+          name="lname"
+          id="name"
+          minlength="2"
+          class=" marg"
+          required
+        />
+        <br />
+        <input type="submit" class="general-button smaller-button"  />
+      </form>
+    </div>
+  </body>
+</html>
