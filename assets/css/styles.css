@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --font-family: "Manrope", sans-serif;
+}
+
 #sidenav {
   flex-direction: column;
   width: 12%;
-  border-right: rgb(77, 196, 255) solid 2px;
+  /* border-right: rgb(77, 196, 255) solid 2px; */
   height: 100%;
+  background: var(--gradient-bar);
 }
 #sidenav > div {
   margin-top: auto;
@@ -31,7 +40,7 @@
 .general-button {
   text-decoration: none;
   transition: 0.5s;
-  border: rgb(77, 196, 255) 0.05em solid;
+  /* border: rgb(77, 196, 255) 0.05em solid; */
   border-radius: 3em;
   height: max-content;
   background: rgb(30, 35, 54);
@@ -83,10 +92,17 @@
 .col {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
   margin-left: 150px;
 }
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 body {
   background: rgb(30, 35, 54);
@@ -94,5 +110,5 @@ body {
 
 * {
   color: rgb(77, 196, 255);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--font-family);
 }
