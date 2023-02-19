@@ -13,10 +13,12 @@
   height: 100%;
   background: var(--gradient-bar);
 }
-#sidenav > div {
+
+#sidenav>div {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 .box {
   display: flex;
   width: 100%;
@@ -37,6 +39,7 @@
   align-items: center;
   align-content: center;
 }
+
 .general-button {
   text-decoration: none;
   transition: 0.5s;

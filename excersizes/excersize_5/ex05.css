@@ -21,6 +21,7 @@
 .column {
   flex-direction: column;
 }
+
 .box {
   display: flex;
   width: 100%;
