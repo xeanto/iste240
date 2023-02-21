@@ -55,6 +55,8 @@ Thumbs.db
 *.key
 *.pem
 
+# ignore pdf's
+*.pdf
 # --------------------------------------------------------
 # BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
 # --------------------------------------------------------
