@@ -5,11 +5,18 @@
 	<title>Images Player</title>
 <link rel="stylesheet" href="assets/css/preloadimages.css" >
 <script type="text/javascript">
+    var x;
+    var bigImages = new Array();
     function init() {
-        const x = document.getElementById("imgHolder").getElementsByTagName('img')
+        x = document.getElementById("imgHolder").getElementsByTagName('img')
         for (let i=1; i <= x.length; i++) {
-            console.log("assets/images/npkrka" + i + "big.jpg");
+            bigImages[i] = new Image();
+            bigImages[i].src = "assets/images/npkrka" + i + "big.jpg"
         }
+    }
+
+    function changeMe(target) {
+
     }
 </script>
 </head>
@@ -23,14 +30,14 @@
     <!--section holding all of the thumbnail pictures-->
     <section class="table">
         <div style="width:833px; height:104px; overflow:auto; white-space: nowrap;" id="imgHolder">
-            <img src="assets/images/npkrka1.png" border="0" onmouseover="this.style.cursor='pointer';" /> 
-            <img src="assets/images/npkrka2.png" border="0" onmouseover="this.style.cursor='pointer';" /> 
-            <img src="assets/images/npkrka3.png" border="0" onmouseover="this.style.cursor='pointer';" /> 
-            <img src="assets/images/npkrka4.png" border="0" onmouseover="this.style.cursor='pointer';" /> 
-            <img src="assets/images/npkrka5.png" border="0" onmouseover="this.style.cursor='pointer';" /> 
-            <img src="assets/images/npkrka6.png" border="0" onmouseover="this.style.cursor='pointer';" />
-            <img src="assets/images/npkrka7.png" border="0" onmouseover="this.style.cursor='pointer';" /> 
-            <img src="assets/images/npkrka8.png" border="0" onmouseover="this.style.cursor='pointer';" />
+            <img src="assets/images/npkrka1.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/> 
+            <img src="assets/images/npkrka2.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/> 
+            <img src="assets/images/npkrka3.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/> 
+            <img src="assets/images/npkrka4.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/> 
+            <img src="assets/images/npkrka5.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/> 
+            <img src="assets/images/npkrka6.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/>
+            <img src="assets/images/npkrka7.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/> 
+            <img src="assets/images/npkrka8.png" border="0" onmouseover="this.style.cursor='pointer';" onmouseenter="changeMe(this)"/>
         </div>
     </section>
 </body>
