@@ -16,7 +16,8 @@
     }
 
     function changeMe(target) {
-
+        var num = parseInt(target.src.split("").reverse().join("").substring(4,5));
+        document.getElementById("bigPic").src = bigImages[num].src
     }
 </script>
 </head>
