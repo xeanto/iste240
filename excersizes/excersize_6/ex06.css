@@ -1,0 +1,155 @@
+#text {
+  color: rgb(77, 196, 255);
+}
+
+#lname {
+  margin-left: 2px;
+}
+
+#button-b {
+  margin-top: 5px;
+}
+
+#mySelect {
+  background: rgb(30, 35, 54);
+}
+
+#mySelect:hover {
+  color: rgb(77, 196, 255);
+}
+
+.column {
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  /* background: rgb(30, 35, 54); */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box#ex5a {
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.title {
+  padding-top: 6em;
+  color: rgb(77, 196, 255);
+}
+
+.jsex {
+  text-decoration: none;
+  /* color: rgb(77, 196, 255); */
+  /* font-size: 28pt; */
+  transition: 0.5s;
+  /* padding: 5rem 5rem 5rem 5rem; */
+  border: rgb(77, 196, 255) 0.05em solid;
+  border-radius: 3em;
+  margin-right: 12px;
+  height: max-content;
+  background: rgb(30, 35, 54);
+}
+
+.jsex:hover {
+  background: rgb(77, 196, 255);
+  color: rgb(30, 35, 54);
+  border-radius: 15px;
+}
+
+.small-button {
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 16pt;
+}
+
+.smaller-button {
+  padding: 0.5rem;
+  font-size: 12pt;
+}
+
+.big-button {
+  padding: 5rem 5rem 5rem 5rem;
+  font-size: 28pt;
+}
+
+.back {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.center-button {
+  margin-left: 25%;
+  width: 50%;
+}
+
+.form-margin {
+  margin: 0.2rem;
+}
+
+.form-text {
+  height: 1rem;
+  border-radius: 0px;
+}
+
+/* .form-text:hover {
+  border: none;
+  border-radius: unset;
+} */
+
+.form-text:hover::placeholder {
+  color: rgb(30, 35, 54);
+}
+
+.form-text::placeholder {
+  color: rgb(81, 154, 186);
+}
+
+.footer {
+  padding-top: 120px;
+}
+.button-row {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+}
+
+.button_js {
+  background: none;
+  border: rgb(77, 196, 255) 0.05em solid;
+  border-radius: 3em;
+  transition: 0.3s;
+  font-size: 1rem;
+  /* width: 100%; */
+  padding: .5rem 1rem;
+
+}
+
+.button_js:hover {
+  background: rgb(77, 196, 255);
+  color: rgb(30, 35, 54);
+}
+
+
+body {
+  background: rgb(30, 35, 54);
+}
+
+* {
+  color: rgb(77, 196, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
