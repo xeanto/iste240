@@ -1,4 +1,0 @@
-AuthName "Restricted Area"
-AuthType Basic
-AuthUserFile /home/MAIN/cam8940/.htpasswd
-require valid-user
