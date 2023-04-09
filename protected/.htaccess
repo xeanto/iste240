@@ -1,4 +1,6 @@
-AuthName "Restricted Area"
-AuthType Basic
-AuthUserFile /home/MAIN/cam8940/.htpasswd
-require valid-user
+Options +Indexes
+
+ShibRedirectToSSL 443
+AuthType shibboleth
+ShibRequireSession on
+require  shib-attr ritEduAffiliation Student
