@@ -1,6 +1,6 @@
 <nav class="nav-container">
     <div class="nav-item">
-        <a href="">Home</a>
+        <a href="<?php echo $root . 'index.php' ?>">Home</a>
     </div>
     <div class="nav-item">
         <p>History</p>

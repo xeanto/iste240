@@ -1,9 +1,9 @@
 <?php
+$root = '/~cam8940/iste240/final/';
 $title = 'Pittsburgh, Pennsylvania';
 $imgSource = 'assets/media/pgh.webp';
+$cssSource = 'assets/css/globalv2.css';
 include 'assets/php/header.php';
-include 'assets/php/nav.php';
-
 ?>
 <div class='column'>
     <div class='row'>
@@ -40,7 +40,7 @@ include 'assets/php/nav.php';
                 Review was founded in 1889, and has ceased print publication since December 1st, 2016. </p>
         </div>
     </div>
-    
+
     <div class='row'>
         <div class='column'>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117556.3708386872!2d-80.0505401904456!3d40.43147798609614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e1!3m2!1sen!2sus!4v1677465020193!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
@@ -54,6 +54,7 @@ include 'assets/php/nav.php';
         </div>
 
     </div>
+
 </div>
 <?php
 include 'assets/php/footer.php';

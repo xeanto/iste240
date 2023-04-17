@@ -8,8 +8,9 @@
     <title>
         <?php echo $title ?>
     </title>
-    <script src="assets/js/index.js"></script>
-    <link rel="stylesheet" href="assets/css/globalv2.css">
+    <script src="<?php echo $root . 'assets/js/index.js' ?>"></script>
+    <link rel="stylesheet" href="<?php echo $cssSource ?>">
 </head>
 
 <body>
+    <?php include 'nav.php' ?>

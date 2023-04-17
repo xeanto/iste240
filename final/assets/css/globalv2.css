@@ -120,3 +120,15 @@ h1 {
 #pghPicture {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .twothirds {
+    flex: 1 1 100%;
+  }
+  .onethirds {
+    flex: 1 1 100%;
+  }
+}

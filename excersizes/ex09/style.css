@@ -1,0 +1,19 @@
+body{
+    background: rgb(30, 35, 54);
+    color: rgb(158, 164, 143);
+}
+.comment {
+    display: flex;
+    background: rgb(39, 45, 68);
+    font-size: 1.2em;
+    font-style: italic;
+    border: 1px solid rgb(198, 108, 75);
+}
+
+.green {
+    color: green;
+}
+
+.padding {
+    padding-left: 1rem;
+}
