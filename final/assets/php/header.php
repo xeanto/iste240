@@ -8,9 +8,11 @@
     <title>
         <?php echo $title ?>
     </title>
-    <script src="<?php echo $root . 'assets/js/index.js' ?>"></script>
+    <script src="/~cam8940/iste240/final/assets/js/index.js"></script>
     <link rel="stylesheet" href="<?php echo $cssSource ?>">
 </head>
 
 <body>
-    <?php include 'nav.php' ?>
+    <?php 
+    $root = '/~cam8940/iste240/final/';
+    include 'nav.php' ?>
