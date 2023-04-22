@@ -13,9 +13,9 @@ $webroot = '/~cam8940/iste240/final/';
         <?php echo $title ?>
     </title>
     <script src="<?php echo $webroot . 'assets/js/index.js' ?>"></script>
-    <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/globalv2.css' ?>">
+    <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/styles.css' ?>">
 </head>
 
 <body>
     <?php
-    include 'nav-new.php' ?>
+    include 'nav.php' ?>

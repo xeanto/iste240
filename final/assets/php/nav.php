@@ -1,32 +1,30 @@
 <nav class="nav-container">
     <div class="nav-item">
-        <a href="<?php echo $root . 'index.php' ?>">Home</a>
+        <a class="nav-button" href="<?php echo $webroot . 'index.php' ?>">Home</a>
     </div>
-    <div class="nav-item">
-        <p>History</p>
-        <div class="dropdown">
-            <p><a href="<?php echo $root ?>pages/pgh_first.html">Pittsburgh's Firsts</a></p>
-            <p><a href="<?php echo $root ?>pages/pgh_people.html">Notable People</a></p>
-            <p><a href="<?php echo $root ?>pages/pgh_inner.html">The Inner City</a></p>
-            <p><a href="<?php echo $root ?>pages/pgh_outer.html">A Pittsburgh Education</a></p>
-            <p><a href="<?php echo $root ?>pages/pgh_bridges.html">Our Bridges</a></p>
-        </div>
-    </div>
-    <div class="nav-item">
-        <p>Interesting Facts</p>
-        <div class="dropdown">
-            <p><a href="<?php echo $root ?>pages/rivers.html">The Three Rivers</a></p>
-            <p><a href="<?php echo $root ?>pages/interesting_people.html">Interesting facts about people</a></p>
-            <p><a href="<?php echo $root ?>pages/random.php">Random Facts</a></p>
-            <p><a href="<?php echo $root ?>pages/steelers.html">The Steelers</a></p>
-        </div>
-    </div>
-    <div class="nav-item">
-        <p>Other</p>
-        <div class="dropdown">
-            <p><a href="<?php echo $root ?>pages/grading.html">The extra stuff!</a></p>
-            <p><a href="<?php echo $root ?>pages/references.html">References</a></p>
-            <p><a href="<?php echo $root ?>pages/feedback">Leave a comment</a></p>
-        </div>
-    </div>
+    <?php
+    $blacklist = array('.', '..');
+    $pattern = '/\$title\s*=\s*[\'"](.+?)[\'"]/';
+    foreach (glob('/home/MAIN/cam8940/Sites/iste240/final/content/*', GLOB_ONLYDIR) as $dir) {
+        $dir = basename($dir);
+        // open divs and set name of nav-item
+        echo '<div class="nav-item">
+            <a class="nav-button">' . ucfirst(strtolower($dir)) . '</a>
+            <div class="nav-content">';
+        // get all directories in $dir
+        foreach (glob('/home/MAIN/cam8940/Sites/iste240/final/content/' . $dir . '/*', GLOB_ONLYDIR) as $subdir) {
+            $subdir = basename($subdir);
+            // get title from index.php
+            $contents = file_get_contents('/home/MAIN/cam8940/Sites/iste240/final/content/' . $dir . '/' . $subdir . '/index.php');
+            $pattern = '/\$title\s*=\s*[\'"](.+?)[\'"]/';
+            if (preg_match($pattern, $contents, $matches)) {
+                $pagetitle = $matches[1];
+                echo '<a href="' . $webroot . 'content/' . $dir . '/' . $subdir . '">' . $pagetitle . '</a>';
+            }
+        }
+        // close divs
+        echo '</div>
+            </div>';
+    }
+    ?>
 </nav>
