@@ -1,4 +1,5 @@
 <?php
+//define reusable variables
 $root = '/home/MAIN/cam8940/Sites/iste240/final/';
 $webroot = '/~cam8940/iste240/final/';
 $contentroot = $root . 'content/';
@@ -19,4 +20,5 @@ $contentroot = $root . 'content/';
 
 <body>
     <?php
+    // include the nav on each page
     include 'nav.php' ?>

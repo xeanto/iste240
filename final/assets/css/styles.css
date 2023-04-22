@@ -103,6 +103,14 @@ h1 {
   cursor: default;
 }
 
+/* TODO 
+  Change the color of current page to different than hover color
+  Add a border to the bottom of the nav bar
+*/
+.active-nav {
+  background-color: var(--color-navhover);
+  color: var(--color-bg) !important;
+}
 /* Flex layout */
 
 .container {
