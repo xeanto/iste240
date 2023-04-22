@@ -1,6 +1,7 @@
 <?php
 $root = '/home/MAIN/cam8940/Sites/iste240/final/';
 $webroot = '/~cam8940/iste240/final/';
+$contentroot = $root . 'content/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
