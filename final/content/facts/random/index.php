@@ -1,7 +1,6 @@
 <?php
 $title = 'Random facts about Pittsburgh';
-$cssSource = '../assets/css/globalv2.css';
-include '../assets/php/header.php';
+include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
 <div class="content_row section__padding">
     <div class="content_column">
@@ -18,5 +17,5 @@ include '../assets/php/header.php';
     </div>
 </div>
 <?php
-include '../assets/php/footer.php';
+include $root . 'assets/php/footer.php';
 ?>

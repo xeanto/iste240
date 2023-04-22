@@ -1,7 +1,6 @@
 <?php
 $title = "Feedback form";
-$cssSource = '../../assets/css/globalv2.css';
-include '../../assets/php/header.php';
+include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 
 // Connect to the database
 include('/home/MAIN/cam8940/dbCon.php');
@@ -36,5 +35,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="submit" value="Submit" />
 </form>
 <?php
-include('../../assets/php/footer.php');
+include $root . 'assets/php/footer.php';
 ?>

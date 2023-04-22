@@ -1,68 +1,21 @@
 <?php
 $title = "References";
+include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?php echo $title ?>
-    </title>
-    <link rel="stylesheet" href="../assets/css/global.css">
-</head>
-
-<body>
-    <div class="iste240__home-nav">
-        <div class="iste240__home-nav_div">
-            <a href="..">Home</a>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>History</p>
-            <div class="dropdown">
-                <p><a href="pgh_first.html">Pittsburgh's Firsts</a></p>
-                <p><a href="pgh_people.html">Notable People</a></p>
-                <p><a href="pgh_inner.html">The Inner City</a></p>
-                <p><a href="pgh_outer.html">Greater Pittsburgh</a></p>
-                <p><a href="pgh_bridges.html">Our Bridges</a></p>
-            </div>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>Interesting Facts</p>
-            <div class="dropdown">
-                <p><a href="rivers.html">The Three Rivers</a></p>
-                <p><a href="interesting_people.html">Interesting facts about people</a></p>
-                <p><a href="random.html">Random Facts</a></p>
-                <p><a href="steelers.html">The Steelers</a></p>
-            </div>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>Other</p>
-            <div class="dropdown">
-                <p><a href="pages/grading.html">The extra stuff!</a></p>
-                <p><a href="pages/references.html">References</a></p>
-            </div>
-        </div>
-    </div>
-    <ul>
-        <li><a target="_blank"
-                href="https://cdn.britannica.com/74/65574-050-B1A02E0C/Downtown-Pittsburgh-Pennsylvania-Fort-Pitt-Bridge-Monongahela.jpg">Main
-                Pittsburgh picture</a>
-            <p>This was used as an eye-catcher on the front prage of the site.</p>
-        </li>
-        <li><a
-                href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Thaddeus_M._Fowler_-_Pittsburgh%2C_Pennsylvania_1902.jpg/1200px-Thaddeus_M._Fowler_-_Pittsburgh%2C_Pennsylvania_1902.jpg">The
-                historic image used on the history of Pittsburgh</a>
-            <p>Used to show the historic view of the city, without skyscrapers</p>
-        </li>
-        <li><a href="https://en.wikipedia.org/wiki/McKees_Rocks_Bridge">The McKees Rocks Bridge</a>
-            <p>Used this page for information and images</p>
-        </li>
-        <li><a href="https://uncoveringpa.com/facts-about-pittsburgh">The Random Facts</a></li>
-    </ul>
-</body>
-
-</html>
+<ul>
+    <li><a target="_blank"
+            href="https://cdn.britannica.com/74/65574-050-B1A02E0C/Downtown-Pittsburgh-Pennsylvania-Fort-Pitt-Bridge-Monongahela.jpg">Main
+            Pittsburgh picture</a>
+        <p>This was used as an eye-catcher on the front prage of the site.</p>
+    </li>
+    <li><a
+            href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Thaddeus_M._Fowler_-_Pittsburgh%2C_Pennsylvania_1902.jpg/1200px-Thaddeus_M._Fowler_-_Pittsburgh%2C_Pennsylvania_1902.jpg">The
+            historic image used on the history of Pittsburgh</a>
+        <p>Used to show the historic view of the city, without skyscrapers</p>
+    </li>
+    <li><a href="https://en.wikipedia.org/wiki/McKees_Rocks_Bridge">The McKees Rocks Bridge</a>
+        <p>Used this page for information and images</p>
+    </li>
+    <li><a href="https://uncoveringpa.com/facts-about-pittsburgh">The Random Facts</a></li>
+</ul>
+<?php include $root . 'assets/php/footer.php'; ?>

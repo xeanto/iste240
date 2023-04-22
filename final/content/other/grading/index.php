@@ -1,71 +1,25 @@
 <?php
 $title = 'The extra stuff!';
+include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The extras!</title>
-    <link rel="stylesheet" href="../assets/css/global.css">
-</head>
-
-<body>
-    <div class="iste240__home-nav">
-        <div class="iste240__home-nav_div">
-            <a href="..">Home</a>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>History</p>
-            <div class="dropdown">
-                <p><a href="pgh_first.html">Pittsburgh's Firsts</a></p>
-                <p><a href="pgh_people.html">Notable People</a></p>
-                <p><a href="pgh_inner.html">The Inner City</a></p>
-                <p><a href="pgh_outer.html">Greater Pittsburgh</a></p>
-                <p><a href="pgh_bridges.html">Our Bridges</a></p>
-            </div>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>Interesting Facts</p>
-            <div class="dropdown">
-                <p><a href="rivers.html">The Three Rivers</a></p>
-                <p><a href="interesting_people.html">Interesting facts about people</a></p>
-                <p><a href="random.html">Random Facts</a></p>
-                <p><a href="steelers.html">The Steelers</a></p>
-            </div>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>Other</p>
-            <div class="dropdown">
-                <p><a href="">The extra stuff!</a></p>
-                <p><a href="references.html">References</a></p>
-            </div>
-        </div>
+<div class="content_row content-padding">
+    <div class="content_column">
+        <h1 class="center">Anything extra done is listed here</h1>
+        <ul>
+            <li>Responsive Design
+                <ul>
+                    <li>Responsive design was taken into account to make this site look great when viewed on mobile.
+                    </li>
+                    <li>The flexboxes are much better able to be used to make a "flowing" layout for the site</li>
+                    <li>The navigation is dynamic. PHP is used to dynamically generate the navigation, using folder
+                        names
+                        as the text for the always shown portion. The title of each page is parsed to put into the
+                        indivudal link
+                        to each page.
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
-    <div class="content_row content-padding">
-        <div class="content_column">
-            <h1 class="center">Anything extra done is listed here</h1>
-            <ul>
-                <li>Responsive Design
-                    <ul>
-                        <li>Responsive design was taken into account to make this site look great when viewed on mobile.
-                        </li>
-                        <li>The flexboxes are much better able to be used to make a "flowing" layout for the site</li>
-                        <li>The navigation is dynamic. PHP is used to dynamically generate the navigation, using folder
-                            names
-                            as the text for the always shown portion. The title of each page is parsed to put into the
-                            indivudal link
-                            to each page.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</body>
-
-</html>
+</div>
+<?php include $root . 'assets/php/footer.php'; ?>

@@ -1,64 +1,18 @@
 <?php
 $title = "Our very own football team!";
+include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?php echo $title ?>
-    </title>
-    <link rel="stylesheet" href="../assets/css/global.css">
-</head>
-
-<body>
-    <div class="iste240__home-nav">
-        <div class="iste240__home-nav_div">
-            <a href="..">Home</a>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>History</p>
-            <div class="dropdown">
-                <p><a href="pgh_first.html">Pittsburgh's Firsts</a></p>
-                <p><a href="pgh_people.html">Notable People</a></p>
-                <p><a href="pgh_inner.html">The Inner City</a></p>
-                <p><a href="pgh_outer.html">Greater Pittsburgh</a></p>
-                <p><a href="pgh_bridges.html">Our Bridges</a></p>
-            </div>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>Interesting Facts</p>
-            <div class="dropdown">
-                <p><a href="rivers.html">The Three Rivers</a></p>
-                <p><a href="interesting_people.html">Interesting facts about people</a></p>
-                <p><a href="random.html">Random Facts</a></p>
-                <p><a href="">The Steelers</a></p>
-            </div>
-        </div>
-        <div class="iste240__home-nav_div">
-            <p>Other</p>
-            <div class="dropdown">
-                <p><a href="grading.html">The extra stuff!</a></p>
-                <p><a href="references.html">References</a></p>
-            </div>
+<div class="content_row section__padding">
+    <div class="content_column">
+        <div>
+            <h1>The Steelers!</h1>
+            <img src="<?php echo $webroot ?>/assets/media/steelers.png" alt="steelers logo" />
+            <p>One of only 2 football franchises to win the Superbowl 6 times. The other is the New England
+                Patriots. They are also one of only 6 franchises that don't have their own cheerleading squad. They
+                played their first playoff game against the Oakland Raiders in 1972. </p>
+            <p>Odd tidbit; in 1943 they merged with the Eagles to become the Steagles.</p>
         </div>
     </div>
-    <div class="content_row section__padding">
-        <div class="content_column">
-            <div>
-                <h1>The Steelers!</h1>
-                <img src="../assets/media/steelers.png" alt="steelers logo" />
-                <p>One of only 2 football franchises to win the Superbowl 6 times. The other is the New England
-                    Patriots. They are also one of only 6 franchises that don't have their own cheerleading squad. They
-                    played their first playoff game against the Oakland Raiders in 1972. </p>
-                <p>Odd tidbit; in 1943 they merged with the Eagles to become the Steagles.</p>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+</div>
+<?php
+include $root . 'assets/php/footer.php'; ?>

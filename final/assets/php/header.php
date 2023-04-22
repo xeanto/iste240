@@ -1,3 +1,7 @@
+<?php
+$root = '/home/MAIN/cam8940/Sites/iste240/final/';
+$webroot = '/~cam8940/iste240/final/';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +12,10 @@
     <title>
         <?php echo $title ?>
     </title>
-    <script src="/~cam8940/iste240/final/assets/js/index.js"></script>
-    <link rel="stylesheet" href="<?php echo $cssSource ?>">
+    <script src="<?php echo $webroot . 'assets/js/index.js' ?>"></script>
+    <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/globalv2.css' ?>">
 </head>
 
 <body>
     <?php
-    $root = '/~cam8940/iste240/final/';
     include 'nav-new.php' ?>

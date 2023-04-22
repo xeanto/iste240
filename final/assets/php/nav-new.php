@@ -1,6 +1,6 @@
 <nav class="nav-container">
     <div class="nav-item">
-        <a class="nav-button" href="<?php echo $root . 'index.php' ?>">Home</a>
+        <a class="nav-button" href="<?php echo $webroot . 'index.php' ?>">Home</a>
     </div>
     <?php
     $blacklist = array('.', '..');
@@ -19,7 +19,7 @@
             $pattern = '/\$title\s*=\s*[\'"](.+?)[\'"]/';
             if (preg_match($pattern, $contents, $matches)) {
                 $pagetitle = $matches[1];
-                echo '<a href="content/' . $dir . '/' . $subdir . '">' . $pagetitle . '</a>';
+                echo '<a href="' . $webroot . 'content/' . $dir . '/' . $subdir . '">' . $pagetitle . '</a>';
             }
         }
         // close divs
