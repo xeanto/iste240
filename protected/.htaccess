@@ -1,6 +1,6 @@
-Options +Indexes
-
-ShibRedirectToSSL 443
-AuthType shibboleth
-ShibRequireSession on
-require  shib-attr ritEduAffiliation Student
+AuthType Basic
+AuthName "Restricted Files"
+# (Following line optional)
+AuthBasicProvider file
+AuthUserFile "/home/MAIN/cam8940/.htpass"
+Require user cam8940
