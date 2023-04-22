@@ -1,5 +1,10 @@
+<?php
+$title = 'The extra stuff!';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +12,7 @@
     <title>The extras!</title>
     <link rel="stylesheet" href="../assets/css/global.css">
 </head>
+
 <body>
     <div class="iste240__home-nav">
         <div class="iste240__home-nav_div">
@@ -46,12 +52,20 @@
             <ul>
                 <li>Responsive Design
                     <ul>
-                        <li>Responsive design was taken into account to make this site look great when viewed on mobile.</li>
+                        <li>Responsive design was taken into account to make this site look great when viewed on mobile.
+                        </li>
                         <li>The flexboxes are much better able to be used to make a "flowing" layout for the site</li>
+                        <li>The navigation is dynamic. PHP is used to dynamically generate the navigation, using folder
+                            names
+                            as the text for the always shown portion. The title of each page is parsed to put into the
+                            indivudal link
+                            to each page.
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </body>
+
 </html>

@@ -1,3 +1,6 @@
+<?php
+$title = 'The Three Rivers';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +8,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Bridges</title>
+    <title>
+        <?php echo $title ?>
+    </title>
     <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
@@ -21,13 +26,13 @@
                 <p><a href="pgh_people.html">Notable People</a></p>
                 <p><a href="pgh_inner.html">The Inner City</a></p>
                 <p><a href="pgh_outer.html">Greater Pittsburgh</a></p>
-                <p><a href="">Our Bridges</a></p>
+                <p><a href="pgh_bridges.html">Our Bridges</a></p>
             </div>
         </div>
         <div class="iste240__home-nav_div">
             <p>Interesting Facts</p>
             <div class="dropdown">
-                <p><a href="rivers.html">The Three Rivers</a></p>
+                <p><a href="">The Three Rivers</a></p>
                 <p><a href="interesting_people.html">Interesting facts about people</a></p>
                 <p><a href="random.html">Random Facts</a></p>
                 <p><a href="steelers.html">The Steelers</a></p>
@@ -43,29 +48,21 @@
     </div>
     <div class="content_row section__padding">
         <div class="content_column">
-            <h1 class='center'>The not-so-boring bridges of Pittsburgh</h1>
-            <h2>The McKees Rocks Bridge</h2>
-            <div class="content_row">
-                <p>This bridge is the longest bridge in Pittsburgh, clocking in at 2.2km or 7,293ft. This makes it the
-                    6th
-                    longest bridge in the state. Although this site isn't about the state, and interesting fact is that
-                    the
-                    longest bridge in PA is almost 3 miles long. </p>
-                <div class="bridge_image">
-                    <img src="../assets/media/McKeesRocksBridge.jpg" alt="The McKees Rocks Bridge">
-                </div>
-            </div>
-            <h2>The Fort Pitt Bridge</h2>
-            <div class="content_row">
-                <div class="bridge_image"><img src="../assets/media/fortPitt.jpg" alt="Fort Pitt Bridge"></div>
-                <p>
-                    This bridge, while not the longest nor the most interesting is here strictly because of how big a
-                    mistake it was. This bridge is a main artery into the city, and has connects to the outlet/inlet of
-                    a tunnel. This bridge starts off two lanes, and then becomes four. Each of these lanes becomes more
-                    than one exit at the end of the bridge, causing it to become one of the worst highways to merge
-                    onto/off of.
-                </p>
-            </div>
+            <h1>The Allegheny River</h1>
+            <p>The Allegheny river is 325 miles long and runs through NY and PA. Personally, wouldn't recommend eating
+                anything that came out of this river, since Pittsburgh used to be an industrial city. Nothing in the
+                rivers is safe for human consumption, considering the amount of stuff that was polluted in the water and
+                surrounding area. </p>
+            <h1>The Monongahela River</h1>
+            <p>
+                Starts in WV, and joins the Allegheny at "the point" to form the Ohio river.
+            </p>
+            <h1>The Ohio River</h1>
+            <p>
+                The Ohio river starts in Pittsburgh and flows all the to the Mississippi river. It's 981 miles long, and
+                is also the largets tributary to the Mississippi river. This is the river that allowed Pittsburgh to
+                become a key city in the exploration of the west, as it was used as a checkpoint along the way.
+            </p>
         </div>
     </div>
 </body>

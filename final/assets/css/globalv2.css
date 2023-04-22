@@ -48,8 +48,7 @@ h1 {
 .nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: left;
   top: 0;
   overflow: hidden;
   background-color: var(--color-blog);
@@ -62,6 +61,7 @@ h1 {
   z-index: 1;
   position: absolute;
   background-color: var(--color-blog);
+  min-width: 160px;
 }
 
 .nav-content > a {
