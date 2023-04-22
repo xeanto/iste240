@@ -13,6 +13,6 @@
 </head>
 
 <body>
-    <?php 
+    <?php
     $root = '/~cam8940/iste240/final/';
-    include 'nav.php' ?>
+    include 'nav-new.php' ?>
