@@ -11,13 +11,13 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
                     <li>Responsive design was taken into account to make this site look great when viewed on mobile.
                     </li>
                     <li>The flexboxes are much better able to be used to make a "flowing" layout for the site</li>
-                    <li>The navigation is dynamic. PHP is used to dynamically generate the navigation, using folder
-                        names
-                        as the text for the always shown portion. The title of each page is parsed to put into the
-                        indivudal link
-                        to each page.
-                    </li>
                 </ul>
+            <li>The navigation is dynamic. PHP is used to dynamically generate the navigation, using folder
+                names
+                as the text for the always shown portion. The title of each page is parsed to put into the
+                indivudal link
+                to each page.
+            </li>
             </li>
         </ul>
     </div>
