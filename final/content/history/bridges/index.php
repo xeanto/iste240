@@ -14,13 +14,13 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
         that the longest bridge in PA is almost 3 miles long.
       </p>
       <div class="bridge_image">
-        <img src="../assets/media/McKeesRocksBridge.jpg" alt="The McKees Rocks Bridge" />
+        <img src="<?php echo $webroot ?>assets/media/McKeesRocksBridge.jpg" alt="The McKees Rocks Bridge" />
       </div>
     </div>
     <h2>The Fort Pitt Bridge</h2>
     <div class="content_row">
       <div class="bridge_image">
-        <img src="../assets/media/fortPitt.jpg" alt="Fort Pitt Bridge" />
+        <img src="<?php echo $webroot ?>/assets/media/fortPitt.jpg" alt="Fort Pitt Bridge" />
       </div>
       <p>
         This bridge, while not the longest nor the most interesting is here

@@ -1,7 +1,7 @@
 <?php
 $title = "Feedback form";
 include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
-
+echo '<script src="' . $webroot . 'assets/js/validate.js"></script>';
 // Connect to the database
 include('/home/MAIN/cam8940/dbCon.php');
 // Check if the form has been submitted
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<form action="" method="post" class="flex-row">
+<form action="" method="post" class="flex-row" id="comment-form" onsubmit="validateForm()">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" />
     <br />

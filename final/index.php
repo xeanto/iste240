@@ -1,6 +1,6 @@
 <?php
 $root = '/~cam8940/iste240/final/';
-$title = 'Pittsburgh, Pennsylvania';
+$title = 'Home';
 $imgSource = 'assets/media/pgh.webp';
 $cssSource = 'assets/css/globalv2.css';
 include 'assets/php/header.php';
@@ -30,6 +30,17 @@ include 'assets/php/header.php';
     <div class='row'>
         <div class='column'>
             <h2 class='center'>Things to do in Pittsburgh</h2>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='column'>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117556.3708386872!2d-80.0505401904456!3d40.43147798609614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e1!3m2!1sen!2sus!4v1677465020193!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
+        </div>
+        <div class='column'>
             <p> We are among the top cities in a lot of categories. Aluminum production, glass products, and
                 petroleum
                 products are among the most notable. We are also only behind New York City and Chicago on corporate
@@ -38,14 +49,6 @@ include 'assets/php/header.php';
                 Pittsburgh Post Gazette was founded in 1786, and the newspaper has been running ever since. The
                 Tribune
                 Review was founded in 1889, and has ceased print publication since December 1st, 2016. </p>
-        </div>
-    </div>
-
-    <div class='row'>
-        <div class='column'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117556.3708386872!2d-80.0505401904456!3d40.43147798609614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e1!3m2!1sen!2sus!4v1677465020193!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
-        </div>
-        <div class='column'>
             <p>Pittsburgh is located at the convergence point between two rivers (the Allegheny and the
                 Monongohela), where they unite to form the Ohio river. These rivers have shaped the city, and given
                 rise to Pittsburghs many bridges. While many say that Pittsburgh has the most bridges of any city in

@@ -92,7 +92,7 @@ h1 {
 .nav-content > a:hover,
 .nav-item:hover .nav-button {
   background-color: var(--color-navhover);
-  color: var(--color-bg);
+  color: white;
 }
 
 .nav-item:hover .nav-content {
@@ -109,7 +109,7 @@ h1 {
 */
 .active-nav {
   background-color: var(--color-navhover);
-  color: var(--color-bg) !important;
+  color: white !important;
 }
 /* Flex layout */
 
