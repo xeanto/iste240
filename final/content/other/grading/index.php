@@ -18,6 +18,9 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
                 indivudal link
                 to each page.
             </li>
+            <li>
+                The form on the feedback page is validated using JavaScript. The form will not submit unless
+                all fields are filled out. There is also focusing of the first part that is invalid.
             </li>
         </ul>
     </div>

@@ -35,10 +35,9 @@ include 'assets/php/header.php';
 
     <div class='row'>
         <div class='column'>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117556.3708386872!2d-80.0505401904456!3d40.43147798609614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e1!3m2!1sen!2sus!4v1677465020193!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117556.3708386872!2d-80.0505401904456!3d40.43147798609614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e1!3m2!1sen!2sus!4v1677465020193!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
+            </div>
         </div>
         <div class='column'>
             <p> We are among the top cities in a lot of categories. Aluminum production, glass products, and

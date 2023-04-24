@@ -138,12 +138,37 @@ h1 {
   flex: 1 60vw;
 }
 
+.noError {
+  display: none;
+}
+
+.error {
+  color: red;
+  border: red 1px solid;
+  display: unset;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 /* ID Selectors */
 #pghPicture {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .row {
     flex-direction: column;
   }

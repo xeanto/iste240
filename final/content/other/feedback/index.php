@@ -22,18 +22,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<form action="" method="post" class="flex-row" id="comment-form" onsubmit="validateForm()">
+<form onsubmit="return validateForm()" action="" method="post" class="flex-row" id="comment-form">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" />
+    <error id="name-error" class="noError"></error>
     <br />
     <label for="email">Email:</label>
-    <textarea name="email" id="email"></textarea>
+    <input name="email" id="email"></input>
+    <error id="email-error" class="noError"></error>
     <br />
     <label for="comment">Comment:</label>
     <textarea name="comment" id="comment"></textarea>
+    <error id="comment-error" class="noError"></error>
     <br />
     <input type="submit" value="Submit" />
 </form>
 <?php
+// Prepare the SQL statement to retrieve all comments from the `comments` table
+$sql = "SELECT * FROM final_feedback";
+// Execute the SQL statement
+$result = $mysqli->query($sql);
+// Loop through the result set
+while ($row = $result->fetch_assoc()) {
+    echo "<div class='comment'>";
+    echo "<p>" . $row["message"] . "</p>";
+    echo "<p class='author'>" . $row["name"] . "</p>";
+    echo "</div>";
+}
+// Close the database connection
+$mysqli->close();
 include $root . 'assets/php/footer.php';
 ?>
