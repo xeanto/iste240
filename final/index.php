@@ -5,7 +5,7 @@ $imgSource = 'assets/media/pgh.webp';
 $cssSource = 'assets/css/globalv2.css';
 include 'assets/php/header.php';
 ?>
-<div class='column'>
+<div class='column content-padding'>
     <div class='row'>
         <h1 class='center'>
             <?php echo $title ?>
