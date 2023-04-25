@@ -14,7 +14,7 @@ include 'assets/php/header.php';
 
     <div class='row'>
 
-        <div class='column onethirds'>
+        <div class='column flex-two'>
             <p>
                 With rolling hills, amazing views, and nice people, it's the best city in PA! Contrary to some peoples'
                 belief that Philadelphia takes the cake, Pittsburgh doesn't have a heroin problem. We have an
@@ -22,7 +22,7 @@ include 'assets/php/header.php';
                 called the incline, which is a powered rail system that climbs up the side of a mountain.</p>
             </p>
         </div>
-        <div class='column twothirds'>
+        <div class='column'>
             <img src='<?php echo $imgSource ?>' alt='Pittsburgh, Pennsylvania' id='pghPicture' />
         </div>
     </div>
@@ -32,13 +32,11 @@ include 'assets/php/header.php';
             <h2 class='center'>Things to do in Pittsburgh</h2>
         </div>
     </div>
-
     <div class='row'>
-        <div class='column'>
-            <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117556.3708386872!2d-80.0505401904456!3d40.43147798609614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e1!3m2!1sen!2sus!4v1677465020193!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
-            </div>
+        <div class='column' id="theMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194367.17622759112!2d-80.1205845350813!3d40.43128391260673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e0!3m2!1sen!2sus!4v1682376747166!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
         <div class='column'>
             <p> We are among the top cities in a lot of categories. Aluminum production, glass products, and
                 petroleum

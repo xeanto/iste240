@@ -1,0 +1,81 @@
+<?php
+//define reusable variables
+$root = '/home/MAIN/cam8940/Sites/iste240/final/';
+$webroot = '/~cam8940/iste240/final/';
+$contentroot = $root . 'content/';
+$sitetitle = ' - ISTE240 Classwork';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <?php echo $title . $sitetitle ?>
+  </title>
+  <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/styles.css' ?>">
+</head>
+
+<body>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <div class="box">
+    <div class="inner-column" id="sidenav">
+      <div class="center">
+        <a href="." class="general-button small-button">Excersize 1</a>
+      </div>
+      <div class="center">
+        <a class="general-button small-button" href="excersizes/excersize_2/">Excersize 2</a>
+      </div>
+      <div class="center">
+        <a href="excersizes/excersize_3/" class="general-button small-button">Excersize 3</a>
+      </div>
+      <div class="center">
+        <a href="excersizes/excersize_4/" class="general-button small-button">Excersize 4</a>
+      </div>
+      <div class="center">
+        <a href="excersizes/excersize_5/ex05.html" class="general-button small-button">Excersize 5</a>
+      </div>
+      <div class="center">
+        <a href="excersizes/excersize_6/" class="general-button small-button">Excersize 6</a>
+      </div>
+      <div class="center">
+        <a href="excersizes/excersize_7/" class="general-button small-button">Excersize 7</a>
+      </div>
+      <div class="center">
+        <a href="assets/classwork/phpFormsStart/orderform.php" class="general-button small-button">Excersize 8</a>
+      </div>
+    </div>
+    <div class="inner-column">
+      <div class="row">
+        <div class="col">
+          <h1 class="center gradient__text">Hi! I'm Casey</h1>
+          <h3 class="center gradient__text"><i>Who?</i></h3>
+
+          <p class="center">
+            I'm a second year Computer and Information Technologies BS
+            student. Although I'm only halfway through my spring semester, I
+            already have a lot of experience in the industry I'm going into. I
+            am employed by RIT as a Level 2 Senior Technician at ITS
+            Resnet/Desktop Support Tech Center. I am planning on also
+            acquiring my MBA at RIT, but that is TBD since it is so far out
+            compared to now. I have a passion for technology, and am a massive
+            nerd but I also like to enjoy some athletics here and there. I'm
+            pretty good at ice skating, having done so for 11 years at this
+            point. I own a Backfire Electric longboard and love riding it when
+            the weather isn't too bad.
+          </p>
+        </div>
+        <div class="col">
+          <img src="assets/media/me.jpeg" alt="A picture of me" class="side-pic center" />
+          <p class="center">
+            <i>Me in the middle of a surprise hike on the Niagra Trails.</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

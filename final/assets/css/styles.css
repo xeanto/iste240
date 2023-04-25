@@ -121,6 +121,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex: 1;
 }
 
 .column {
@@ -128,14 +129,25 @@ h1 {
   flex-direction: column;
   margin: 0 1rem;
   justify-content: center;
+  flex: 1;
 }
 
-.twothirds {
-  flex: 2 1 40vw;
+.flex-two {
+  /* for use in a three item row */
+  flex: 2;
 }
 
-.onethirds {
-  flex: 1 60vw;
+.flex-three {
+  /* for use in a four item row */
+  flex: 3;
+}
+
+.code {
+  display: inline-block;
+  background: black;
+  border: 1px dotted var(--color-subtext);
+  color: var(--color-subtext);
+  padding: 0.25rem 0.5rem;
 }
 
 .noError {
@@ -148,24 +160,12 @@ h1 {
   display: unset;
 }
 
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
-
 /* ID Selectors */
 #pghPicture {
   width: 100%;
+}
+#theMap {
+  min-width: 33vw; /* needs to change on mobile/tablet */
 }
 
 @media screen and (max-width: 1024px) {
