@@ -5,8 +5,9 @@
   color: var(--color-text);
 }
 body {
-  background: var(--color-bg);
+  background: var(--gradient-nav);
   margin: 0;
+  max-width: 1920px;
 }
 p,
 a,
@@ -15,15 +16,35 @@ li {
   line-height: 36px;
 }
 
+br {
+  line-height: 48px;
+}
+
 h1 {
   font-size: 36px;
+  color: white;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+  font-style: italic;
+}
+h3 {
+  font-size: 28px;
+  font-style: italic;
 }
 :root {
   --font-family: "Manrope", sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-
+  --gradient-nav: linear-gradient(
+    90deg,
+    rgba(34, 63, 148, 1) 0%,
+    rgba(0, 55, 110, 1) 35%,
+    rgba(4, 12, 24, 1) 100%
+  );
   --color-bg: #040c18;
   --color-footer: #031b34;
   --color-blog: #042c54;
@@ -52,7 +73,7 @@ h1 {
   justify-content: left;
   top: 0;
   overflow: hidden;
-  background-color: var(--color-blog);
+  background: var(--gradient-bar);
   margin: 0;
   font-size: 20px;
 }
@@ -61,14 +82,16 @@ h1 {
   display: none;
   z-index: 1;
   position: absolute;
-  background-color: var(--color-blog);
+  background: transparent;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px);
   min-width: 160px;
 }
 
 .nav-content > a {
   position: relative;
   text-decoration: none;
-  color: var(--color-text);
+  color: white;
   display: block;
   padding: 14px 16px;
   margin: 0;
@@ -82,7 +105,7 @@ h1 {
   text-decoration: none;
   border: none;
   outline: none;
-  color: var(--color-text);
+  color: white;
   background-color: inherit;
   font-size: inherit;
 }
@@ -136,7 +159,7 @@ h1 {
   /* for use in a three item row */
   flex: 2;
 }
-
+/*  */
 .flex-three {
   /* for use in a four item row */
   flex: 3;
@@ -144,10 +167,23 @@ h1 {
 
 .code {
   display: inline-block;
-  background: black;
-  border: 1px dotted var(--color-subtext);
+  background: var(--color-blog);
+  border-radius: 0.75rem;
   color: var(--color-subtext);
-  padding: 0.25rem 0.5rem;
+  padding: 0 0.33rem;
+  /* margin: -0.125rem; */
+}
+
+.quote {
+  font-style: italic;
+  color: var(--color-text);
+}
+
+.content-divide {
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: var(--color-subtext);
 }
 
 .noError {
@@ -155,15 +191,28 @@ h1 {
 }
 
 .error {
+  display: unset;
   color: red;
   border: red 1px solid;
-  display: unset;
 }
 
+.br {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+p {
+  color: transparent;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
 /* ID Selectors */
 #pghPicture {
   width: 100%;
 }
+
 #theMap {
   min-width: 33vw; /* needs to change on mobile/tablet */
 }
@@ -177,5 +226,15 @@ h1 {
   }
   .onethirds {
     flex: 1 1 100%;
+  }
+  #theMap {
+    min-height: 33vh;
+  }
+  #theMap iframe {
+    height: 33vh !important;
+    width: 100% !important;
+  }
+  .content-padding {
+    padding: 0.25rem 0.5rem;
   }
 }
