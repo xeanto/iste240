@@ -5,7 +5,7 @@
   color: var(--color-text);
 }
 body {
-  background: var(--gradient-nav);
+  background: var(--gradient-body);
   margin: 0;
   max-width: 1920px;
 }
@@ -22,35 +22,42 @@ br {
 
 h1 {
   font-size: 36px;
-  color: white;
 }
 
 h2 {
   font-size: 32px;
-  color: white;
   font-style: italic;
 }
 h3 {
   font-size: 28px;
   font-style: italic;
 }
+
+h1,
+h2,
+h3 {
+  color: transparent;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: -0.04em;
+}
+p {
+  color: white;
+  letter-spacing: -0.04em;
+}
 :root {
   --font-family: "Manrope", sans-serif;
-
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-text: linear-gradient(270deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-  --gradient-nav: linear-gradient(
-    90deg,
-    rgba(34, 63, 148, 1) 0%,
-    rgba(0, 55, 110, 1) 35%,
-    rgba(4, 12, 24, 1) 100%
-  );
+  --gradient-body: #020024;
   --color-bg: #040c18;
   --color-footer: #031b34;
   --color-blog: #042c54;
   --color-text: #81afdd;
   --color-subtext: #ff8a71;
   --color-navhover: #9b75b7;
+  --color-navhover-transparency: rgba(155, 117, 183, 0.5);
   --nav-height: 3rem;
   --nav-item-width: 6rem;
 }
@@ -86,6 +93,9 @@ h3 {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(8px);
   min-width: 160px;
+  border: rgba(4, 12, 24, 1) 1px solid;
+  border-top: none;
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .nav-content > a {
@@ -114,7 +124,7 @@ h3 {
 
 .nav-content > a:hover,
 .nav-item:hover .nav-button {
-  background-color: var(--color-navhover);
+  background-color: var(--color-navhover-transparency);
   color: white;
 }
 
@@ -177,6 +187,7 @@ h3 {
 .quote {
   font-style: italic;
   color: var(--color-text);
+  background: unset;
 }
 
 .content-divide {
@@ -200,14 +211,7 @@ h3 {
   display: block;
   margin-bottom: 0.5rem;
 }
-p {
-  color: transparent;
-  background: var(--gradient-text);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
+
 /* ID Selectors */
 #pghPicture {
   width: 100%;
