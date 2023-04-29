@@ -2,8 +2,8 @@
 $title = 'The extra stuff!';
 include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
-<div class="content_row content-padding">
-    <div class="content_column">
+<div class="row content-padding">
+    <div class="col">
         <h1 class="center">Anything extra done is listed here</h1>
         <ul>
             <li>Responsive Design
@@ -21,6 +21,9 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
             <li>
                 The form on the feedback page is validated using JavaScript. The form will not submit unless
                 all fields are filled out. There is also focusing of the first part that is invalid.
+            </li>
+            <li>
+                The navigation has a background filter that blurs the text behind it. This is done using some fancy css.
             </li>
         </ul>
     </div>

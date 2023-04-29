@@ -9,7 +9,7 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
     </h1>
 </div>
 
-<site-content class="row content-padding">
+<div class="row content-padding">
     <div class="column">
         <h2>Pittsburghese: Taking a look at the Pittsburgh Dialect</h2>
         <p>Having grown up in Pittsburgh, I'm intimately familiar with the dialect of the people I grew up with. There
@@ -58,7 +58,7 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
         </p>
 
     </div>
-</site-content>
+</div>
 <?php
 include $root . 'assets/php/footer.php';
 ?>

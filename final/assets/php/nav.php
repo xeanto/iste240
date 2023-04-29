@@ -1,4 +1,4 @@
-<nav class="nav-container">
+<nav class=" nav-container">
     <div class="nav-item">
         <a class="nav-button" href="<?php echo $webroot . 'index.php' ?>">Home</a>
     </div>
@@ -23,7 +23,7 @@
         foreach (glob($contentroot . $dir . '/*', GLOB_ONLYDIR) as $subdir) {
             $subdir = basename($subdir);
             // figure out which page to highlight
-            if (strpos($_SERVER['REQUEST_URI'], $subdir) !== false) {
+            if (strpos($_SERVER['REQUEST_URI'], $dir . '/' . $subdir) !== false) {
                 $activesub = 'active-nav';
             } else {
                 $activesub = '';
@@ -43,3 +43,4 @@
     }
     ?>
 </nav>
+<site-content>
