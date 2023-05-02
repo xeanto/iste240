@@ -25,6 +25,10 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
             <li>
                 The navigation has a background filter that blurs the text behind it. This is done using some fancy css.
             </li>
+            <li>
+                The navigation has a scroll bar that shows how far down the page you are. This is done using javascript
+                to listen on page scroll and edit the <span class="code quote">width</span> css property
+            </li>
         </ul>
     </div>
 </div>

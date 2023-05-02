@@ -16,6 +16,7 @@ $sitetitle = ' - Pittsburgh, Pennsylvania';
         <?php echo $title . $sitetitle ?>
     </title>
     <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/styles.css' ?>">
+    <script src="<?php echo $webroot . 'assets/js/scroll.js' ?>"></script>
 </head>
 
 <body>

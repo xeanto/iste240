@@ -43,4 +43,7 @@
     }
     ?>
 </nav>
+<div id="scrollBarContainer">
+    <div id="scrollBar"></div>
+</div>
 <site-content>
