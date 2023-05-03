@@ -16,10 +16,13 @@ $sitetitle = ' - Pittsburgh, Pennsylvania';
         <?php echo $title . $sitetitle ?>
     </title>
     <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/styles.css' ?>">
-    <script src="<?php echo $webroot . 'assets/js/scroll.js' ?>"></script>
+    <script src="<?php echo $webroot . 'assets/js/scripts.js' ?>"></script>
 </head>
 
 <body>
+    <script>
+        document.body.className = "hidden"
+    </script>
     <?php
     // include the nav on each page
     include 'nav.php' ?>
