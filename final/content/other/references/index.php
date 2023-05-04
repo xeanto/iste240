@@ -34,5 +34,14 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
             The Incline
         </a>
     </li>
+    <li>
+        <p>
+            <span class="code">ChatGPT</span> was used to generate the text for this website. Ethically, I believe that
+            this website should not be a test of my ability to gather information but rather my ability to build a
+            website. Having real world experience where the client has given me text to be put into a spot on the
+            website, I know that content will not be my worry. Styling and laying it out will. As such, citing the text
+            on this page as having come from ChatGPT, by recursion, cites the data it was trained upon.
+        </p>
+    </li>
 </ul>
 <?php include $root . 'assets/php/footer.php'; ?>
