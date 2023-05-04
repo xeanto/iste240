@@ -9,19 +9,20 @@ $sitetitle = ' - Pittsburgh, Pennsylvania';
 <html lang="en">
 
 <head>
+    <base href="<?php echo $webroot ?>">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <?php echo $title . $sitetitle ?>
     </title>
-    <link rel="stylesheet" href="<?php echo $webroot . 'assets/css/styles.css' ?>">
-    <script src="<?php echo $webroot . 'assets/js/scripts.js' ?>"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js"></script>
 </head>
 
 <body>
     <script>
-        document.body.className = "hidden"
+    document.body.className = "hidden"
     </script>
     <?php
     // include the nav on each page

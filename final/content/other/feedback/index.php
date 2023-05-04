@@ -37,18 +37,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br />
     <input type="submit" value="Submit" />
 </form>
+<hr class="content-divide">
 <?php
 // Prepare the SQL statement to retrieve all comments from the `comments` table
 $sql = "SELECT * FROM final_feedback";
 // Execute the SQL statement
 $result = $mysqli->query($sql);
 // Loop through the result set
+echo "<div class='commentContainer'>";
 while ($row = $result->fetch_assoc()) {
     echo "<div class='comment'>";
-    echo "<p>" . $row["message"] . "</p>";
-    echo "<p class='author'>" . $row["name"] . "</p>";
+    echo "<p> <span class='name'>" . $row["name"] . "</span>  <span class='time'> | @" . $row["time"] . " | </span> " . $row["message"] . "</p>";
     echo "</div>";
 }
+echo "</div>";
 // Close the database connection
 $mysqli->close();
 include $root . 'assets/php/footer.php';

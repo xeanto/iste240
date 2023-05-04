@@ -2,45 +2,53 @@
 $title = "The Inner City";
 include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
-<div class="content_row section__padding">
-    <div class="content_column">
+<div class="row content-padding">
+    <div class="column">
         <h1 class="center">What to know about living in the city?</h1>
         <p>Glad you asked! Here are a few things to know about this city before moving here.</p>
-        <ul>
-            <li>
-                <p><strong>It's a great place to work!</strong> <br>We are third for corporate HQ occupancy in the
-                    United
-                    States!</p>
-            </li>
-            <li>
-                <p><strong>The infrastructure both loves you and hates you!</strong> <br>Your car is going to hate
-                    it
-                    here, though. The northeastern winters bring a LOT of salt, for about 4 months out of the year
-                    which means your car will be very rusty within a few winters here. Our infrastructure is just as
-                    bad, with our highways looking like a spider web in some places, while our roads look like
-                    pegboard they have so many potholes. On the positive side, though you will be able to reach your
-                    destination in less time than you think. Our web of interconnected roadways leads to short
-                    travel times.</p>
-            </li>
-            <li>
-                <p><strong>Great Parks!</strong><br>
-                    We have some of the best parks around, in addition to the city being surrounded by forest in
-                    almost every direction! Not sure if they're counted as parks, but golf courses are abundant here
-                    in Pittsburgh</p>
-            </li>
-            <li>
-                <p><strong>We've got you covered on sports events.</strong><br>
-                    Pittsburgh has both a NFL and an MLB team, although their prowess is up in the air. How good
-                    they are aside, the games are stil fun to attend, especially if you go to the after parties.
+        <hr class="content-divide">
+        <div class="row deleteInnerMargin">
+            <div class="column flex-three deleteInnerMargin">
+                <p>
+                    Living in downtown Pittsburgh can be an exciting and vibrant experience. The area is home
+                    tonumerousattractions, restaurants, and cultural institutions, making it an ideal place to live for
+                    those whowanttobe in the heart of the action.
+                    <br><br>
+                    One of the biggest advantages of living in downtown Pittsburgh is its proximity to some of
+                    thecity'smosticonic landmarks and attractions. From the PNC Park, home of the Pittsburgh Pirates, to
+                    the HeinzHistoryCenter and the Carnegie Science Center, there is always something to see and do in
+                    downtownPittsburgh.
+            </div>
+            <div class="column">
+                <img src="assets/media/pncPark.png" alt="PNC Park in Downtown Pittsburgh" class="flex-image">
+            </div>
+        </div>
+        <hr class="content-divide">
+        <div class="row-reverse flex-center">
+            <div class="columnn flex-two deleteInnerMargin">
+                <p>
+                    Downtown Pittsburgh is also home to a wide variety of restaurants, cafes, and bars. Whether you're
+                    in the mood for a quick bite or a gourmet meal, you'll find plenty of options to choose from in the
+                    downtown area. From traditional Pittsburgh cuisine, like Primanti Brothers sandwiches, to
+                    international fare, like Thai or Mexican, there's something for everyone.
+                    <br><br>
+                    Another advantage of living in downtown Pittsburgh is its walkability. Many residents choose to walk
+                    or bike to work, which is made easier by the city's network of bike lanes and pedestrian-friendly
+                    streets. The city also has a robust public transportation system, including buses, light rail, and
+                    the famous Pittsburgh Inclines, which are funicular railways that take passengers up and down Mount
+                    Washington.
+                    <br><br>
+                    Overall, living in downtown Pittsburgh is a unique and exciting experience that offers a perfect
+                    balance of urban living and outdoor recreation. Whether you're a young professional looking to be in
+                    the heart of the action or a family looking for a vibrant and diverse community, downtown Pittsburgh
+                    has something for everyone.
                 </p>
-            </li>
-            <li>
-                <p><strong>Our food has an insane variety.</strong><br>
-                    Not only are they close together, but they're vast in diversity and variety. Our restauraunt
-                    districts have everything you could want, from boba tea and sushi all the way to an American
-                    style diner.</p>
-            </li>
-        </ul>
+            </div>
+            <div class="column deleteInnerMargin">
+                <img src="assets/media/theIncline.jpg" alt="The Incline accross from Downtown Pittsburgh"
+                    class="flex-image">
+            </div>
+        </div>
     </div>
 </div>
 <?php include $root . 'assets/php/footer.php'; ?>

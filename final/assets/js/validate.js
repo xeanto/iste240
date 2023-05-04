@@ -1,3 +1,4 @@
+// Author: Casey Malley
 // define a function that validates the form to leave a comment that runs on submit
 function validateForm() {
   form = document.getElementById("comment-form");

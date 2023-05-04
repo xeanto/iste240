@@ -3,47 +3,48 @@ $title = "Notable People";
 include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
 <h1 class="center">Notable People of the City</h1>
-<div class="content_row">
-    <div class="content_column">
-        <ul>
-            <li>
-                <h2>William "Billy" Strayhorn.</h2>
-                <p>Born in Ohio, 1915. Died 1967. Grew up mostly in Pittsburgh, and known for his music. He
-                    composed Jazz numbers, like Lush Life, Chelsea Bridge, Johnny Come Lately, and many, many more.
-                    Much of his inspiration came from his environment. The sights, sounds, and tastes of Pittsburgh.
-                </p>
-            </li>
-            <li>
-                <h2>Fred Rodgers</h2>
-                <p>
-                    World Renown as Mr. Rodgers. March, 1928 -> February 27, 2003, RIP. He helped speak to children
-                    about the world around them, through his show. He was mild mannered, and tried to be like a
-                    second ffather to his audience. His legacy continues today, and even teens today remember
-                    growing up watching Mr. Rodgers.
-                </p>
-            </li>
-        </ul>
-    </div>
-    <div class="content_column">
-        <ul>
-            <li>
-                <h2>Christina Aguilera</h2>
-                <p>
-                    Christina was known for singing the Star Spangled Banner as a child. This launched her into
-                    popularity, which allowed her to become a singer/songwriter. She joined Disney at a young age,
-                    taking up acting roles alongside the likes of Justin Timberlake, and Ryan Gosling. She signed
-                    onto a record label in 1994, after recording
-                </p>
-            </li>
-            <li>
-                <h2>The Warner Brothers</h2>
-                <p>
-                    Henry, Sam, Albert, and Jack Warner were originally from Ohio, although they made a name for
-                    themselves in Pittsburgh. They opened the first silent Nickelodeon, which at the time meant a
-                    place to view silent projection films. This was opened in New Castle, Pennsylvania.
-                </p>
-            </li>
-        </ul>
-    </div>
+<div class="column content-padding">
+    <h2 class="center">William "Billy" Strayhorn.</h2>
+    <p>William "Billy" Strayhorn was a renowned composer and arranger of jazz music, best known for his work
+        with Duke Ellington. Born in Ohio in 1915, Strayhorn grew up mostly in Pittsburgh and was heavily
+        influenced by the city's vibrant music scene. He began working with Ellington in the early 1940s and
+        collaborated with him on some of his most famous compositions, including "Take the A Train" and
+        "Satin Doll." Strayhorn was openly gay at a time when homosexuality was illegal, and his personal
+        struggles with discrimination and addiction often found their way into his music. He died in 1967 at
+        the age of 51, leaving behind a legacy as one of the greatest jazz composers of all time.
+    </p>
+    <hr class="content-divide">
+    <h2 class="center">Fred Rodgers</h2>
+    <p>
+        Andy Warhol is another notable figure from Pittsburgh. Born in the city in 1928, Warhol was a
+        leading figure in the Pop Art movement of the 1960s. He gained fame for his colorful, bold prints of
+        everyday objects such as Campbell's Soup cans and Coca-Cola bottles. Warhol also made a name for
+        himself as a filmmaker, producing avant-garde movies such as "Chelsea Girls" and "Empire." He was
+        known for his eccentric personality and love of celebrity culture, and his Studio 54 parties were
+        legendary. Warhol died in 1987 at the age of 58, but his influence on art and popular culture
+        continues to this day.
+    </p>
+    <hr class="content-divide">
+    <h2 class="center">Christina Aguilera</h2>
+    <p>
+        George Romero was a filmmaker known for his contributions to the horror genre. Born in New York City
+        in 1940, Romero moved to Pittsburgh in the 1950s and attended Carnegie Mellon University. He gained
+        fame in the late 1960s with his groundbreaking film "Night of the Living Dead," which is widely
+        regarded as one of the greatest horror movies of all time. Romero continued to make horror movies
+        throughout his career, often exploring themes of social commentary and satire. He died in 2017 at
+        the age of 77, but his legacy as a master of horror continues to inspire filmmakers and scare
+        audiences to this day.
+    </p>
+    <hr class="content-divide">
+    <h2 class="center">The Warner Brothers</h2>
+    <p>
+        August Wilson is another notable figure from Pittsburgh. Born in the Hill District of Pittsburgh in
+        1945, Wilson went on to become one of the greatest playwrights of the 20th century. He was best
+        known for his ten-play cycle, which chronicled the lives of African Americans in different decades
+        of the 20th century. The cycle included plays such as "Fences," "The Piano Lesson," and "Ma Rainey's
+        Black Bottom," and earned Wilson two Pulitzer Prizes for Drama. Wilson died in 2005 at the age of
+        60, but his work continues to be performed and studied in theaters and universities around the
+        world.
+    </p>
 </div>
 <?php include $root . 'assets/php/footer.php'; ?>

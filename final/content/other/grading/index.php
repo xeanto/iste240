@@ -30,7 +30,7 @@ include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
         <p>
             The navigation has a scroll bar that shows how far down the page you are. This is done using javascript
             to listen on page scroll and edit the <span class="code quote">width</span> css property. The javascript
-            accounts for the different between the client screen height and total page height.<br>
+            accounts for the different between the client screen height and total page height.
             The window property <span class="code quote">window.pageYOffset</span> is used to get the current
             scrolled-to px value,
             and the <span class="code quote">document.body.scrollHeight</span> is used to get the total height of

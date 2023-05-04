@@ -3,7 +3,7 @@ $title = 'The Dialect of Pittsburgh';
 
 include '/home/MAIN/cam8940/Sites/iste240/final/assets/php/header.php';
 ?>
-<div class="row">
+<div class="row centerTitleMobile">
     <h1>
         <?php echo $title ?>
     </h1>

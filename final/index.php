@@ -1,5 +1,4 @@
 <?php
-$root = '/~cam8940/iste240/final/';
 $title = 'Home';
 $imgSource = 'assets/media/pgh.webp';
 $cssSource = 'assets/css/globalv2.css';
@@ -34,7 +33,10 @@ include 'assets/php/header.php';
     </div>
     <div class='row'>
         <div class='column' id="theMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194367.17622759112!2d-80.1205845350813!3d40.43128391260673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e0!3m2!1sen!2sus!4v1682376747166!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194367.17622759112!2d-80.1205845350813!3d40.43128391260673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!5e0!3m2!1sen!2sus!4v1682376747166!5m2!1sen!2sus"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="The Map"></iframe>
         </div>
 
         <div class='column'>
@@ -52,6 +54,7 @@ include 'assets/php/header.php';
                 the world, it doesn't even have the most bridges in the state of Pennsylvania</p>
 
         </div>
+
 
     </div>
 

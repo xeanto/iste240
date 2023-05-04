@@ -33,7 +33,7 @@
             // get title from index.php
             if (preg_match($pattern, $contents, $matches)) {
                 $pagetitle = $matches[1];
-                $pagepath = $webroot . 'content/' . $dir . '/' . $subdir;
+                $pagepath = 'content/' . $dir . '/' . $subdir;
                 echo '<a class="' . $activesub . '" href="' . $pagepath . '">' . $pagetitle . '</a>';
             }
         }
@@ -46,4 +46,5 @@
 <div id="scrollBarContainer">
     <div id="scrollBar"></div>
 </div>
+
 <site-content>

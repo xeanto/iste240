@@ -10,6 +10,9 @@ body {
   max-width: 1920px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -62,6 +65,7 @@ p {
   --color-navhover-transparency: rgba(155, 117, 183, 0.5);
   --nav-height: 3rem;
   --nav-item-width: 6rem;
+  --scrollBarHeight: 0.45rem;
 }
 
 /* Generic styles used all over */
@@ -75,6 +79,14 @@ p {
 .content-padding {
   padding: 1rem 2rem;
 }
+.content-margin {
+  margin: 2rem 2rem;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 /* Nav styles */
 
 .nav-container {
@@ -139,10 +151,14 @@ p {
   cursor: default;
 }
 
-/* TODO 
-  Change the color of current page to different than hover color
-  Add a border to the bottom of the nav bar
-*/
+.name {
+  color: white;
+}
+.time {
+  color: var(--color-subtext);
+  font-size: 0.75rem;
+  margin: 0;
+}
 .active-nav {
   background-color: var(--color-navhover);
   color: white !important;
@@ -166,6 +182,21 @@ p {
   margin: 0 1rem;
   justify-content: center;
   flex: 1;
+}
+.column-reverse {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column-reverse;
+}
+.row-reverse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+  flex-direction: row-reverse;
 }
 
 .flex-two {
@@ -197,6 +228,7 @@ p {
   height: 1px;
   border: none;
   background-color: var(--color-subtext);
+  margin: 1.5rem auto;
 }
 
 .noError {
@@ -219,6 +251,111 @@ p {
   z-index: 1;
 }
 
+.page-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.75s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient-body);
+}
+.hide {
+  opacity: 0;
+}
+.paused {
+  animation-play-state: paused !important;
+}
+.flex-image {
+  width: 30vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: row;
+  background: rgba(91, 72, 105, 0.5);
+  border-top: var(--color-subtext) 1px solid;
+}
+footer > .column {
+  align-items: center;
+}
+footer > .row > .column > h4,
+footer > .row > .column > p {
+  margin: 0.5rem 0;
+}
+
+.row > .column,
+.row > .column-reverse,
+.row-reverse > .column,
+.row-reverse > .column-reverse {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column ~ .column:nth-child(2) {
+  margin-left: 1rem;
+}
+
+/* cssportal.com generated generic  */
+.custom-loader {
+  width: 100px;
+  height: 100px;
+  border: 4px solid var(--color-subtext);
+  background: repeating-conic-gradient(
+      #0000 0 90deg,
+      var(--color-subtext) 0 180deg
+    ),
+    repeating-conic-gradient(var(--color-subtext) 0 90deg, #0000 0 180deg);
+  background-size: 32px 32px;
+  background-position: 0 0;
+  animation: h7 2.5s infinite;
+}
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+.comment {
+  display: flex;
+  flex: 1 1 160px;
+  height: fit-content;
+  background-color: var(--color-footer);
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+
+.comment > .author {
+  font-weight: bold;
+  display: block;
+  background: var(--color-blog);
+  width: fit-content;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+.comment:nth-child(1) {
+  text-align: left;
+}
+.comment:nth-child(2) {
+  text-align: center !important;
+}
+.comment:nth-child(3) {
+  text-align: right;
+}
+
+.commment {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
 /* ID Selectors */
 #pghPicture {
   width: 100%;
@@ -230,39 +367,35 @@ p {
 
 #scrollBarContainer {
   display: flex;
-  height: 3px;
+  height: var(--scrollBarHeight);
   width: 100%;
 }
 #scrollBar {
-  height: 3px;
+  height: var(--scrollBarHeight);
   width: 0%;
   background: var(--gradient-bar);
 }
-.page-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  transition: 2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--gradient-body);
+#monongahela {
+  align-self: flex-end;
 }
-.hide {
-  display: none;
+#alleghenyImage > img {
+  align-self: flex-end;
 }
-/* cssportal.com generated generic  */
-.custom-loader {
-  width: 100px;
-  height: 100px;
-  border: 4px solid #ff8a71;
-  background: repeating-conic-gradient(#0000 0 90deg, #ff8a71 0 180deg),
-    repeating-conic-gradient(#ff8a71 0 90deg, #0000 0 180deg);
-  background-size: 32px 32px;
-  background-position: 0 0;
-  animation: h7 4s infinite;
+#steelers {
+  margin-left: auto;
+}
+#steelersTitle {
+  margin-left: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#fortPitt,
+#mcKeesRocks {
+  margin: 0 1.5rem;
+}
+#historicalImage {
+  width: 100%;
+  height: auto;
 }
 
 @keyframes h7 {
@@ -272,14 +405,24 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+  .column ~ .column:nth-child(2) {
+    margin-left: 0;
+  }
   .row {
     flex-direction: column;
+  }
+  .row-reverse {
+    flex-direction: column-reverse;
   }
   .twothirds {
     flex: 1 1 100%;
   }
   .onethirds {
     flex: 1 1 100%;
+  }
+  .innnerColumnLeft,
+  .innnerColumnRight {
+    margin: 0;
   }
   #theMap {
     min-height: 33vh;
@@ -289,6 +432,30 @@ p {
     width: 100% !important;
   }
   .content-padding {
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  .flex-image {
+    align-self: center;
+    width: 100%;
+  }
+  .centerTitleMobile {
+    text-align: center;
+  }
+  #steelers {
+    height: auto;
+    width: 25vw;
+    margin-left: unset;
+  }
+  #steelersDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #steelersTitle {
+    margin-left: unset;
   }
 }
